@@ -65,3 +65,7 @@ PUBLIC
   zs/interface/InterfaceExport.hpp
 )
 endif()
+
+if (ZPC_ENABLE_DOC)
+    add_subdirectory(doc)
+endif()
