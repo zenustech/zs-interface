@@ -11,7 +11,7 @@ project(zs-interface
 	DESCRIPTION ${project_description}
 	LANGUAGES C CXX)
 
-option(ZPC_ENABLE_DOC "Build Doc" ON)
+option(ZS_INTERFACE_ENABLE_DOC "Build Doc" ON)
 
 if (CMAKE_VERSION VERSION_LESS "3.21")
     # ref: VulkanMemoryAllocator
@@ -76,6 +76,6 @@ PUBLIC
 )
 endif()
 
-if (ZPC_ENABLE_DOC)
+if (ZS_INTERFACE_ENABLE_DOC)
     add_subdirectory(doc)
 endif()
