@@ -58,6 +58,19 @@ add_library(zs_interface SHARED
 	zs/interface/details/Py.cpp
 	zs/interface/details/PyHelper.cpp
 )
+set_target_properties(zs_interface 
+	PROPERTIES
+	POSITION_INDEPENDENT_CODE ON
+
+	RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}
+	LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}
+	ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}
+
+	SKIP_BUILD_RPATH OFF
+	BUILD_WITH_INSTALL_RPATH TRUE
+	INSTALL_RPATH "\$ORIGIN"
+	INSTALL_RPATH_USE_LINK_PATH TRUE
+)
 target_include_directories(zs_interface PUBLIC zs)
 target_link_libraries(zs_interface PRIVATE zpc_jit_py zpcbase zswhereami)
 # target_compile_definitions(zs_interface PRIVATE -DPy_LIMITED_API) # -DPY_SSIZE_T_CLEAN)
