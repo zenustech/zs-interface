@@ -1,4 +1,4 @@
-# 构建 {#ZpcVerse_Build}
+# 构建 {#ZsInterface_Build}
 
 
 ## 配置依赖
@@ -28,6 +28,6 @@ cmake --build build --config Release --parallel 8 --target zs_interface
 项目文档可见README.md以及doc目录，而服务于开发的API文档需自行安装doxygen并通过cmake构建。
 
 ```console
-cmake -Bbuild -DZPC_BUILD_DOC=ON
+cmake -Bbuild -DZS_INTERFACE_ENABLE_DOC=ON
 cmake --build build --target doc
 ```

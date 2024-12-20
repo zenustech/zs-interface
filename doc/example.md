@@ -1,7 +1,7 @@
-# 代码示例 {#ZpcVerse_Example}
+# 代码示例 {#ZsInterface_Example}
 
 ## 该文档目标人群
-建议在阅读该文档前，先浏览完[设计理念](@ref ZpcVerse_Design)文档。
+建议在阅读该文档前，先浏览完[设计理念](@ref ZsInterface_Design)文档。
 
 ##  开发主题
 

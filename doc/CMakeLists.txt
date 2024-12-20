@@ -29,7 +29,7 @@ set(DOXYGEN_USE_MDFILE_AS_MAINPAGE doc/doc.md)
 set(DOXYGEN_MACRO_EXPANSION ON)
 set(DOXYGEN_PREDEFINED __cplusplus)
 
-set(DOXYGEN_PROJECT_NAME "ZpcVerse")
+set(DOXYGEN_PROJECT_NAME "ZsInterface")
 set(DOXYGEN_PROJECT_NUMBER "${project_version}")
 set(DOXYGEN_PROJECT_BRIEF "")
 set(DOXYGEN_FILE_PATTERNS *.h *h.in *.hpp) # headers only
