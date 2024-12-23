@@ -4,10 +4,10 @@
 该项目旨在提供一个接口较稳定的开发工具包，帮助开发者构建面向软件平台的功能结点/插件拓展。
 
 以下是需注意的构建要求：
-- **cmake**作为项目构建管理工具
-- **c++17**（及以上） 作为指定c++标准
-- **zpc**作为高性能计算中间层（对接cuda、openmp、sycl2020(WIP)等后端）
-- **python3 (建议3.12+)**作为脚本语言
+- **cmake** 作为项目构建管理工具
+- **c++17** （及以上） 作为指定c++标准
+- **zpc** 作为高性能计算中间层（对接cuda、openmp、sycl2020(WIP)等后端）
+- **python3 (建议3.12+)** 作为脚本语言
 
 ### 可拓展性
 一个可长期维护的软件需要具备良好的可拓展性，具体可分为以下两方面：
@@ -19,7 +19,7 @@
 - 动态库插件（c/c++开发）
 - python package（directory、pyd等）
 
-一方面，开发工具包自身的ABI稳定性通过局限在(Stable ABI)[https://docs.python.org/3.10/c-api/stable.html#stable]范围内api的使用来保障；另一方面，工具包所提供的多种抽象接口类型（NodeConcept, ContextConcept等）为软件平台的功能拓展提供便利。
+一方面，开发工具包自身的ABI稳定性通过局限在[Stable ABI](https://docs.python.org/3.10/c-api/stable.html#stable)范围内api的使用来保障；另一方面，工具包所提供的多种抽象接口类型（NodeConcept, ContextConcept等）为软件平台的功能拓展提供便利。
 以上设计旨在支持/允许开发者在软件内即时编写插件和热加载运行。
 
 

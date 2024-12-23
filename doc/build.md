@@ -22,7 +22,7 @@ git submodule update --init --recursive
 cmake -Bbuild
 cmake --build build --config Release --parallel 8 --target zs_interface
 ```
-- **注意**：若想启用precompile header来加速编译，可在cmake configure时加入-DZS_ENABLE_PCH=ON选项。
+- **注意** ：若想启用precompile header来加速编译，可在cmake configure时加入-DZS_ENABLE_PCH=ON选项。
 
 ## 文档构建
 项目文档可见README.md以及doc目录，而服务于开发的API文档需自行安装doxygen并通过cmake构建。
