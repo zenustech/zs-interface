@@ -88,6 +88,6 @@ set(DOXYGEN_CLASS_DIAGRAMS NO)
 
 set(DOXYGEN_VERBATIM_VARS DOXYGEN_ALIASES DOXYGEN_PREDEFINED)
 
-doxygen_add_docs(doc ${DOXY_FILES}
+doxygen_add_docs(zs_interface_doc ${DOXY_FILES}
   ALL WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
   COMMENT "Generating API documentation with Doxygen")
