@@ -13,8 +13,8 @@ git clone https://github.com/zenustech/zs-interface.git --recursive
 git submodule update --init --recursive
 ```
 
-其中有少量第三方依赖，如[vulkan](https://vulkan.lunarg.com/), llvm等，是以[find_package](https://cmake.org/cmake/help/latest/command/find_package.html)形式引用。
-推荐开发者通过包管理器（apt、vcpkg、brew/macports等）安装或手动从源码构建使用。
+其中有少量第三方依赖，如[vulkan](https://vulkan.lunarg.com/), [llvm](https://llvm.org)等，是以[find_package](https://cmake.org/cmake/help/latest/command/find_package.html)形式引用。
+推荐开发者通过包管理器（apt、vcpkg、brew/macports等）安装或手动从源码构建后使用。
 
 ## 构建项目
 
@@ -29,5 +29,5 @@ cmake --build build --config Release --parallel 8 --target zs_interface
 
 ```console
 cmake -Bbuild -DZS_INTERFACE_ENABLE_DOC=ON
-cmake --build build --target doc
+cmake --build build --target zs_interface_doc
 ```
