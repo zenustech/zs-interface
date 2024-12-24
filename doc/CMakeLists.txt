@@ -4,10 +4,10 @@ project(OpenVDBDocs LANGUAGES NONE)
 find_package(Doxygen REQUIRED doxygen)
 
 set(DOXY_FILES
-  projects/core/interface
-  projects/core/interface/details
-  projects/core/interface/world
-  projects/core/interface/world/value_type
+  zs/interface
+  zs/interface/details
+  zs/interface/world
+  zs/interface/world/value_type
 
   doc/doc.md
   doc/build.md
