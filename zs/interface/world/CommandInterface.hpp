@@ -1,5 +1,6 @@
 #pragma once
 #include "interface/InterfaceExport.hpp"
+#include "zensim/TypeAlias.hpp"
 
 namespace zs {
 
