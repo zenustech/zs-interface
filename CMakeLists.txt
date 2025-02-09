@@ -79,7 +79,7 @@ target_compile_definitions(zs_interface PRIVATE -DZs_Interface_EXPORT)
 target_compile_options(zs_interface 
   PUBLIC $<$<COMPILE_LANGUAGE:CXX>: $<IF:$<CXX_COMPILER_ID:MSVC>, /Zc:__cplusplus /utf-8 /bigobj $<IF:$<CONFIG:Debug>, , /O2> /EHsc, $<IF:$<CXX_COMPILER_ID:Clang>, -Xclang -O3, -O3> >> # -fuse-ld=lld -fvisibility=hidden># -flto=thin -fsanitize=cfi
 )
-if (NOT ${ZS_ENABLE_SYCL_DPCPP} AND NOT ${ZS_ENABLE_SYCL})
+if (NOT ${ZS_ENABLE_SYCL_ONEAPI} AND NOT ${ZS_ENABLE_SYCL})
 target_precompile_headers(zs_interface 
 PUBLIC
   zs/interface/details/PyHelper.hpp
